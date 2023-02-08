@@ -1,0 +1,23 @@
+.search-header{
+    position: relative;
+    &__input{
+        background-color: transparent;
+        padding: 8px 20px 8px 31px;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+    }
+    &__submit{
+        background-color: transparent;
+        background-image: url("../img/icon-search.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 19px;
+        height: 20px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0,-50%);
+    }
+}

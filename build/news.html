@@ -54,18 +54,20 @@
     <div class="header__top">
         <div class="container">
             <div class="header__top-body">
-            <div class="header__social social-header">
-            <a href="#"><i class="icon icon-dzen-orange"></i></a>
-            <a href="#"><i class="icon icon-odnoklasniki-orange"></i></a>
-            <a href="#"><i class="icon icon-vkontakte-orange"></i></a>
-        </div>
-            <div class="header__links">
-                <a href="">о бренде</a>
-                <a href="">новости</a>
-                <a href="">видео</a>
-                <a href="">контакты</a>
-                <a href="">выберете свой город <i class="icon icon-triagle-orange"></i></a>
-            </div>
+                <div class="header__social">
+                    <div class="social">
+                        <a href="#"><i class="icon icon-dzen-orange"></i></a>
+                        <a href="#"><i class="icon icon-odnoklasniki-orange"></i></a>
+                        <a href="#"><i class="icon icon-vkontakte-orange"></i></a>
+                    </div>
+                </div>
+                <div class="header__links">
+                    <a href="">о бренде</a>
+                    <a href="">новости</a>
+                    <a href="">видео</a>
+                    <a href="">контакты</a>
+                    <a href="">выберете свой город <i class="icon icon-triagle-orange"></i></a>
+                </div>
             </div>
         </div>
     </div>
@@ -74,17 +76,20 @@
             <a href="" class="header__logo">
                 <img src="./img/logo-ermak-white.svg" width="215" height="43" alt="">
             </a>
-
-            <ul class="header__menu">
-                <li><a href="">каталог</a></li>
-                <li><a href="">ермак-центр</a></li>
-                <li><a href="">где купить</a></li>
-                <li><a href="">сервисные центры</a></li>
-            </ul>
-
-            <form class="header__search" action="">
-
-            </form>
+            <div class="header__menu">
+                <ul class=" menu-header">
+                    <li><a href="">каталог</a></li>
+                    <li><a href="">ермак-центр</a></li>
+                    <li><a href="">где купить</a></li>
+                    <li><a href="">сервисные центры</a></li>
+                </ul>
+            </div>
+            <div class="header__search">
+                <form class=" search-header" action="">
+                    <input class="search-header__input" type="text" placeholder="найти">
+                    <input class="search-header__submit" type="submit" value="">
+                </form>
+            </div>
         </div>
     </div>
 </header>
@@ -209,7 +214,40 @@
     </main>
     <div class="footer">
     <div class="container">
+        <div class="footer__top">
+            <ul class="footer__menu">
+                <li><a href="">о бренде</a></li>
+                <li><a href="">новости</a></li>
+                <li><a href="">где купить</a></li>
+            </ul>
 
+            <ul class="footer__menu">
+                <li><a href="">ермак-центр</a></li>
+                <li><a href="">стать партнёром</a></li>
+                <li><a href="">сервисные центры</a></li>
+            </ul>
+            <ul class="footer__menu">
+                <li><a href="">видео</a></li>
+                <li><a href="">скачать</a></li>
+                <li><a href="">контакты</a></li>
+            </ul>
+
+            <div class="footer__contacts">
+                <a href="tel:8 800 555 555 555">8 800 555 555 555</a>
+                <a href="mailto:info@ermak.com">info@ermak.com</a>
+                <div class="footer__social">
+                    <div class="social social--footer">
+                        <a href="#"><i class="icon icon-dzen-white"></i></a>
+                        <a href="#"><i class="icon icon-odnoklasniki-white"></i></a>
+                        <a href="#"><i class="icon icon-vkontakte-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2023 Ермак — честный инструмент</p>
+            <a href="">политика конфиденциальности</a>
+        </div>
     </div>
 </div>
     <!--TODO: после верстки всех модалок добавить:  data-remodal-options="hashTracking: false, closeOnOutsideClick: false"-->

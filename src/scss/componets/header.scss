@@ -13,6 +13,9 @@
     &__bottom{
         padding-top: 16px;
         padding-bottom: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     &__links{
         a{
@@ -25,5 +28,12 @@
             text-decoration: none;
             margin-right: 100px;
         }
+    }
+    &__menu{
+        margin-right: 0;
+        margin-left: auto;
+    }
+    &__search{
+        margin-left: 36px;
     }
 }
