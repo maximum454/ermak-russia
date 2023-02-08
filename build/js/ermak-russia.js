@@ -808,10 +808,10 @@ if(document.querySelector('.swiper-main-category')) {
     })
 }
 
-if(document.querySelector('.swiper-products')) {
-    document.querySelectorAll('.slider-products').forEach(n => {
-        const swiperProducts = new Swiper(n.querySelector('.swiper-products'), {
-            slidesPerView: 4,
+if(document.querySelector('.swiper-product-slider')) {
+    document.querySelectorAll('.product-slider').forEach(n => {
+        const swiperProductSlider = new Swiper(n.querySelector('.swiper-product-slider'), {
+            slidesPerView: 6,
             spaceBetween: 20,
             observer: true,
             observeParents: true,

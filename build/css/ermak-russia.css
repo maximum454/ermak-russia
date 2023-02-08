@@ -3060,6 +3060,243 @@ body {
   color: #000000;
 }
 
+.product-slider {
+  margin-bottom: 52px;
+}
+
+.product-slider__header {
+  margin-bottom: 39px;
+}
+
+.product-slider__title {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #232020;
+  margin: 0 0 0 107px;
+}
+
+.product-slider__body {
+  background-color: #D6D4D4;
+  padding: 20px;
+  margin: 0 -20px;
+}
+
+.product-slider__footer {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product-slider__all {
+  margin-left: auto;
+  margin-right: 0;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-slider__all .icon {
+  margin-right: 0;
+  margin-left: 44px;
+}
+
+.product-slider .swiper-product-slider {
+  overflow: hidden;
+}
+
+.product-card {
+  background: #FFFFFF;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 216px;
+          flex: 1 0 216px;
+  max-width: 216px;
+  position: relative;
+}
+
+.product-card__img,
+.product-card .embed-responsive-item {
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-card__stick {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  z-index: 10;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 159.99%;
+  color: #000000;
+}
+
+.product-card__stick span,
+.product-card__stick a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 5px;
+  background-color: #000000;
+  padding: 3px 5px;
+}
+
+.product-card__stick .action {
+  color: #C60505;
+}
+
+.product-card__figure {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-card__figure img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.product-card__content {
+  padding: 16px;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.product-card__articul {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.product-card__name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  text-transform: uppercase;
+  -webkit-box-orient: vertical;
+  margin: 0 0 8px;
+  text-decoration: none;
+}
+
+.product-card__name:hover {
+  color: #FF7101;
+}
+
+.product-card__price {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card__btn {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-articles {
+  margin-bottom: 52px;
+}
+
+.main-articles__header {
+  margin-bottom: 39px;
+}
+
+.main-articles__title {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #232020;
+  margin: 0 0 0 107px;
+}
+
+.main-articles__body {
+  background-color: #D6D4D4;
+  padding: 20px;
+  margin: 0 -20px;
+}
+
+.main-articles__footer {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-articles__all {
+  margin-left: auto;
+  margin-right: 0;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-articles__all .icon {
+  margin-right: 0;
+  margin-left: 44px;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;
