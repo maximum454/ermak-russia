@@ -3297,6 +3297,34 @@ body {
   margin-left: 44px;
 }
 
+.partners-slider {
+  margin-bottom: 52px;
+}
+
+.partners-slider__header {
+  margin-bottom: 39px;
+}
+
+.partners-slider__title {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #232020;
+  margin: 0 0 0 107px;
+}
+
+.partners-slider .swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners-slider .swiper-wrapper img {
+  margin: 0 auto;
+  display: block;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;

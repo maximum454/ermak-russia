@@ -797,6 +797,13 @@ if(document.querySelector('.swiper-main')) {
     })
 }
 
+if(document.querySelector('.swiper-partners-slider')) {
+    const swiperPartnersSlider = new Swiper('.swiper-partners-slider', {
+        slidesPerView: 5,
+        spaceBetween: 20,
+    })
+}
+
 if(document.querySelector('.swiper-main-category')) {
     const swiperMainCategory = new Swiper('.swiper-main-category', {
         slidesPerView: 4,
