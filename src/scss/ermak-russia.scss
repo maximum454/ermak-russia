@@ -1,0 +1,167 @@
+@import "./partials/normalize";
+@import "./partials/formstyler";
+@import "./partials/formstyler.theme";
+@import "./partials/swiper-bundle";
+@import "./partials/remodal";
+@import "./partials/remodal-default-theme";
+@import "mixin";
+@import "fonts";
+@import "buttons";
+@import "form";
+@import "icon";
+@import "table";
+@import "text";
+@import "alert";
+@import "remodal";
+
+
+
+* {
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: #fff;
+	font-family: $font1;
+}
+.wrp {
+	overflow: hidden;
+	position: relative;
+	&__overlay{
+		background-color: rgba(0,0,0,.15);
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: 15;
+		display: none;
+		&.active{
+			display: block;
+		}
+	}
+}
+
+.d-none {
+	display: none !important;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-desktop-none {
+	display: none;
+	@include r(767) {
+		display: block;
+	}
+}
+
+.d-mobile-none {
+	display: block;
+	@include r(767) {
+		display: none !important;
+	}
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.swiper-pagination{
+	.swiper-pagination-bullet{
+		width: 20px;
+		height: 20px;
+		background: transparent;
+		opacity: .7;
+		padding: 10px;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			background-color: #ffffff;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+		}
+		&-active{
+			border: 1px solid #ffffff;
+			opacity: 1;
+		}
+	}
+}
+
+.embed-responsive{
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0;
+	overflow: hidden;
+	&:before{
+		display: block;
+		content: "";
+	}
+	&.embed-responsive-21by9{
+		&:before{
+			padding-top: 42.857143%;
+		}
+	}
+	&.embed-responsive-16by9{
+		&:before {
+			padding-top: 56.25%;
+		}
+	}
+	&.embed-responsive-9by16{
+		&:before {
+			padding-top: 109%;
+		}
+	}
+	&.embed-responsive-4by3{
+		&:before{
+			padding-top: 75%;
+		}
+	}
+	&.embed-responsive-1by1{
+		&:before{
+			padding-top: 100%;
+		}
+	}
+	.embed-responsive-item,
+	embed,
+	iframe,
+	object,
+	video{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+}
+
+@import "componets/header";
+@import "componets/footer";
+@import "componets/breadcrumb";
+
+
+
+
+

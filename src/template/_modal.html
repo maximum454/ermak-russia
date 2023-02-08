@@ -1,0 +1,126 @@
+<!--TODO: после верстки всех модалок добавить:  data-remodal-options="hashTracking: false, closeOnOutsideClick: false"-->
+<div class="remodal" data-remodal-id="modal-city">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="select-city__modal">
+        <div class="remodal__header">
+            <div class="remodal__title">Выбор города</div>
+        </div>
+        <div class="remodal__body">
+
+            <form class="select-city__form" action="">
+                <input class="form-control" type="text" value="" placeholder="Поиск">
+            </form>
+            <div class="select-city__col">
+                <a href="#">г. Москва</a>
+                <a href="#">г. Санкт-Петербург</a>
+                <a href="#">г. Барнаул г. Владивосток</a>
+                <a href="#">г. Волгоград</a>
+                <a href="#">г Воронеж</a>
+                <a href="#">г. Екатеринбург</a>
+                <a href="#">г. Ижевск</a>
+                <a href="#">г. Иркутск</a>
+                <a href="#">г. Казань</a>
+                <a href="#">г. Кемерово</a>
+                <a href="#">г. Краснодар</a>
+                <a href="#">г. Красноярск г. Махачкала</a>
+                <a href="#">г. Нижний Новгород</a>
+
+                <a href="#">г. Новосибирск</a>
+                <a href="#">г. Омск г. Оренбург</a>
+                <a href="#">г. Премь</a>
+                <a href="#">г. Ростов-на-Дону</a>
+                <a href="#">г. Самара</a>
+                <a href="#">г. Саратов</a>
+                <a href="#">г. Тольятти</a>
+                <a href="#">г. Томск</a>
+                <a href="#">г. Тюмень</a>
+                <a href="#">г. Ульяновск</a>
+                <a href="#">г. Уфа</a>
+                <a href="#">г. Хабаровск</a>
+                <a href="#">г. Челябинск</a>
+                <a href="#">г. Ярославль</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="remodal form-auth" data-remodal-id="modal-login">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="select-city__modal">
+        <div class="remodal__header">
+            <div class="remodal__title">Вход в личный кабинет</div>
+            <a href="" class="remodal__link" data-remodal-target="modal-reg">регистрация</a>
+        </div>
+        <div class="remodal__body">
+            <form class="form-auth__form" action="">
+                <div class="form-group">
+                    <input class="form-control" type="text" value="" placeholder="Логин">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="" placeholder="Пароль">
+                </div>
+                <div class="remodal__btn">
+                    <button type="button" class="btn btn-primary">Войти</button>
+                    <a href="" class="remodal__link" data-remodal-target="modal-password-reset">восстановить пароль</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="remodal form-auth" data-remodal-id="modal-password-reset">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="select-city__modal">
+        <div class="remodal__header">
+            <div class="remodal__title">Восстановление пароля</div>
+        </div>
+        <div class="remodal__body">
+            <form class="form-auth__form" action="">
+                <div class="form-group">
+                    <input class="form-control" type="text" value="" placeholder="Почта указанная при регистрации">
+                </div>
+                <div class="remodal__btn">
+                    <button type="button" class="btn btn-primary">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="remodal form-auth" data-remodal-id="modal-reg">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="select-city__modal">
+        <div class="remodal__header">
+            <div class="remodal__title">Регистрация</div>
+        </div>
+        <div class="remodal__body">
+            <form class="form-auth__form" action="">
+                <div class="form-label">Персональные данные</div>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="" placeholder="Имя *">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="" placeholder="Фамлия">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="" placeholder="Почта *">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="" placeholder="Номер телефона*">
+                </div>
+
+                <div class="form-label">Пароль</div>
+
+                <div class="form-group">
+                    <input class="form-control" type="password" value="" placeholder="Пароль *">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control" type="password" value="" placeholder="Повторите пароль">
+                </div>
+                <div class="remodal__btn">
+                    <button type="button" class="btn btn-primary">Зарегистрироваться</button>
+                    <span class="small">Нажимая «Зарегистрироваться» вы соглашаетесь c пользовательским соглашением и политикой конфиденциальности</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+.icon {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.icon-dzen-orange {
+    background-image: url("../img/icons-sprite.svg#dzen-orange");
+}
+.icon-odnoklasniki-orange {
+    background-image: url("../img/icons-sprite.svg#odnoklasniki-orange");
+}
+.icon-vkontakte-orange {
+    background-image: url("../img/icons-sprite.svg#vkontakte-orange");
+}
+.icon-triagle-orange {
+    background-image: url("../img/icons-sprite.svg#triagle-orange");
+}
+
