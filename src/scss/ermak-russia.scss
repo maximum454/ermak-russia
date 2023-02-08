@@ -1,7 +1,6 @@
 @import "./partials/normalize";
 @import "./partials/formstyler";
 @import "./partials/formstyler.theme";
-@import "./partials/swiper-bundle";
 @import "./partials/remodal";
 @import "./partials/remodal-default-theme";
 @import "mixin";
@@ -163,6 +162,9 @@ body{
 @import "componets/search-header";
 @import "componets/footer";
 @import "componets/breadcrumb";
+@import "componets/main-slider";
+@import "componets/main-category";
+@import "componets/main-adventage";
 
 
 

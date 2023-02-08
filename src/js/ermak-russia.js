@@ -1,5 +1,3 @@
-@@include('./partials/jquery.min.js')
-@@include('./partials/swiper-bundle.min.js')
 @@include('./partials/jquery.formstyler.min.js')
 @@include('./partials/remodal.js')
 
@@ -13,10 +11,14 @@ if(document.querySelector('.swiper-main')) {
     })
 }
 
-if(document.querySelector('.swiper-brands')) {
-    const swiperBrands = new Swiper('.swiper-brands', {
-        slidesPerView: 7.8,
-        spaceBetween: 53,
+if(document.querySelector('.swiper-main-category')) {
+    const swiperMainCategory = new Swiper('.swiper-main-category', {
+        slidesPerView: 4,
+        grid: {
+            fill: 'row',
+            rows: 2,
+        },
+        spaceBetween: 20,
     })
 }
 
@@ -33,22 +35,4 @@ if(document.querySelector('.swiper-products')) {
             },
         });
     });
-}
-
-const menuCatalogBtn = document.getElementById('js-menu-catalog')
-menuCatalogBtn.addEventListener('click', menuCatalog)
-
-function menuCatalog(){
-    const target = this;
-    const overlay = document.querySelector('.wrp__overlay');
-    const menuCatalog = document.querySelector('.menu-catalog');
-    if(this.classList.contains('active')){
-        this.classList.remove('active')
-        overlay.classList.remove('active')
-        menuCatalog.classList.remove('active')
-    }else{
-        this.classList.add('active')
-        overlay.classList.add('active')
-        menuCatalog.classList.add('active')
-    }
 }

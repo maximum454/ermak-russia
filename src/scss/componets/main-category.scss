@@ -1,0 +1,56 @@
+.main-category{
+    margin-bottom: 50px;
+    &__figure{
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+        figcaption{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color:  rgba(35, 32, 32, 0.5);
+            width: 100%;
+            height: 100%;
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+    &__footer{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__all{
+        margin-left: auto;
+        margin-right: 0;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #000000;
+        text-decoration: none;
+        .icon{
+            margin-right: 0;
+            margin-left: 44px;
+        }
+    }
+    .swiper-main-category{
+        overflow: hidden;
+    }
+}
