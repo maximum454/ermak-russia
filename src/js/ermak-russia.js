@@ -40,6 +40,22 @@ if(document.querySelector('.swiper-product-slider')) {
                 nextEl: n.querySelector('.swiper-button-next'),
                 prevEl: n.querySelector('.swiper-button-prev'),
             },
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+
+                },
+                480: {
+                    slidesPerView: 3,
+
+                },
+                640: {
+                    slidesPerView: 4,
+                },
+                1024: {
+                    slidesPerView: 6,
+                }
+            }
         });
     });
 }
