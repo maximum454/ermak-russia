@@ -15,6 +15,22 @@ if(document.querySelector('.swiper-partners-slider')) {
     const swiperPartnersSlider = new Swiper('.swiper-partners-slider', {
         slidesPerView: 5,
         spaceBetween: 20,
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+
+            },
+            480: {
+                slidesPerView: 3,
+
+            },
+            640: {
+                slidesPerView: 4,
+            },
+            1024: {
+                slidesPerView: 5,
+            }
+        }
     })
 }
 
@@ -26,6 +42,19 @@ if(document.querySelector('.swiper-main-category')) {
             rows: 2,
         },
         spaceBetween: 20,
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+
+            },
+            480: {
+                slidesPerView: 3,
+
+            },
+            640: {
+                slidesPerView: 4,
+            },
+        }
     })
 }
 
