@@ -787,17 +787,18 @@
 });
 
 
-if(document.querySelector('.swiper-main')) {
-    const swiperMain = new Swiper('.swiper-main', {
+if (document.querySelector('.swiper-main-slider')) {
+    const swiperMainSlider = new Swiper('.swiper-main-slider', {
         slidesPerView: 1,
         spaceBetween: 10,
         pagination: {
             el: '.swiper-pagination',
+            clickable: true,
         },
     })
 }
 
-if(document.querySelector('.swiper-partners-slider')) {
+if (document.querySelector('.swiper-partners-slider')) {
     const swiperPartnersSlider = new Swiper('.swiper-partners-slider', {
         slidesPerView: 5,
         spaceBetween: 20,
@@ -820,7 +821,7 @@ if(document.querySelector('.swiper-partners-slider')) {
     })
 }
 
-if(document.querySelector('.swiper-main-category')) {
+if (document.querySelector('.swiper-main-category')) {
     const swiperMainCategory = new Swiper('.swiper-main-category', {
         slidesPerView: 4,
         grid: {
@@ -844,7 +845,7 @@ if(document.querySelector('.swiper-main-category')) {
     })
 }
 
-if(document.querySelector('.swiper-product-slider')) {
+if (document.querySelector('.swiper-product-slider')) {
     document.querySelectorAll('.product-slider').forEach(n => {
         const swiperProductSlider = new Swiper(n.querySelector('.swiper-product-slider'), {
             slidesPerView: 6,

@@ -12,11 +12,15 @@
         a{
             font-weight: 900;
             font-size: 16px;
-            line-height: 5px;
             letter-spacing: 0.1em;
             text-transform: uppercase;
             color: #FFFFFF;
             text-decoration: none;
+            transition: color .3s ease;
+            &:hover{
+                transition: color .3s ease;
+                color: #FF7101;
+            }
         }
     }
 }

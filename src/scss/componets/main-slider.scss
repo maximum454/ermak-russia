@@ -1,11 +1,28 @@
 .main-slider{
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto 65px;
+    overflow: hidden;
     &__item{
         position: relative;
+        background-color: #FF7101;
     }
     &__figure{
         margin: 0;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(30, 2, 2, 0.5);
+            width: 100%;
+            height: 100%;
+        }
+        img{
+            display: block;
+            width: 100%;
+        }
     }
     &__content{
         position: absolute;
@@ -26,11 +43,17 @@
         margin: 0 0 63px;
     }
     &__left{
-        padding: 66px 0;
+        flex: 1 0 57.5%;
+        padding: 85px 30px 45px 138px;
     }
     &__right{
-        background-color: #FF7101;
-        padding: 77px 0 55px;
+        flex: 1 0 42.5%;
+        max-width: 42.5%;
+        padding: 77px 0 55px 25px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         p{
             font-weight: 700;
             font-size: 12px;
@@ -42,7 +65,46 @@
             margin: 0;
         }
         .btn{
+            display: block;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #FFFFFF;
             margin-top: 32px;
+            background: #232020;
+            border: 2px solid #FFFEFD;
+            padding: 13px 24px 14px;
+            transition: all .3s ease;
+            &:hover{
+                transition: all .3s ease;
+                background: #ffffff;
+                border-color: #232020;
+                color: #232020;
+            }
         }
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 45px;
+            background-color: #FF7101;
+            width: 110%;
+            height: 100%;
+            transform: skew(-18deg);
+            z-index: 1;
+        }
+    }
+
+    &__right-inner{
+        max-width: 355px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 10;
+    }
+
+    .swiper-main-slider{
+        position: relative;
     }
 }

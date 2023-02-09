@@ -74,7 +74,9 @@
         -webkit-box-orient: vertical;
         margin: 0 0 8px;
         text-decoration: none;
+        transition: color .3s ease;
         &:hover{
+            transition: color .3s ease;
             color: #FF7101;
         }
     }
@@ -95,5 +97,10 @@
         text-transform: uppercase;
         text-decoration: none;
         color: #000000;
+        transition: color .3s ease;
+        &:hover{
+            transition: color .3s ease;
+            color: #FF7101;
+        }
     }
 }

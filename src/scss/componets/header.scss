@@ -21,12 +21,16 @@
         a{
             font-weight: 700;
             font-size: 12px;
-            line-height: 5px;
             letter-spacing: 0.1em;
             text-transform: uppercase;
             color: #FF7101;
             text-decoration: none;
             margin-right: 100px;
+            transition: color .3s ease;
+            &:hover{
+                transition: color .3s ease;
+                color: #000000;
+            }
         }
     }
     &__menu{

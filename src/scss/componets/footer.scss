@@ -19,6 +19,11 @@
             text-transform: capitalize;
             color: #FFFFFF;
             text-decoration: none;
+            transition: color .3s ease;
+            &:hover{
+                transition: color .3s ease;
+                color: #FF7101;
+            }
         }
         p{
             font-weight: 400;
@@ -46,6 +51,11 @@
                 text-transform: uppercase;
                 text-decoration: none;
                 color: #ffffff;
+                transition: color .3s ease;
+                &:hover{
+                    transition: color .3s ease;
+                    color: #FF7101;
+                }
             }
         }
     }
@@ -58,6 +68,11 @@
             text-decoration: none;
             display: block;
             margin-bottom: 47px;
+            transition: color .3s ease;
+            &:hover{
+                transition: color .3s ease;
+                color: #FF7101;
+            }
         }
     }
 }
