@@ -1,0 +1,22 @@
+.catalog-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__aside{
+        flex: 1 0 350px;
+        max-width: 350px;
+    }
+    &__content{
+        flex: 1;
+        max-width: 887px;
+        background-color: #D6D4D4;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .product-card{
+        flex: 1 0 calc(25% - 20px);
+        max-width: 25%;
+    }
+}

@@ -869,6 +869,9 @@ if (document.querySelector('.swiper-product-slider')) {
                     slidesPerView: 4,
                 },
                 1024: {
+                    slidesPerView: 5,
+                },
+                1160: {
                     slidesPerView: 6,
                 }
             }

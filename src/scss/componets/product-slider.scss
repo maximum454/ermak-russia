@@ -14,7 +14,10 @@
     &__body{
         background-color: #D6D4D4;
         padding: 20px;
-        margin: 0 -20px;
+        width: 100vw;
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
     }
     &__footer{
         margin-top: 50px;
@@ -40,5 +43,8 @@
     }
     .swiper-product-slider{
         overflow: hidden;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

@@ -17,7 +17,15 @@
         align-items: center;
         justify-content: space-between;
     }
+    &__social{
+        margin-right: 20px;
+    }
     &__links{
+        flex: auto;
+        max-width: 990px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         a{
             font-weight: 700;
             font-size: 12px;
@@ -25,7 +33,6 @@
             text-transform: uppercase;
             color: #FF7101;
             text-decoration: none;
-            margin-right: 100px;
             transition: color .3s ease;
             &:hover{
                 transition: color .3s ease;
@@ -39,5 +46,8 @@
     }
     &__search{
         margin-left: 36px;
+    }
+    @include r(1159){
+
     }
 }

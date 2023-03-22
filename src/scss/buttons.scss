@@ -3,11 +3,11 @@
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 13px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 18px;
 	user-select: none;
-	border: 1px solid transparent;
+	border: 2px solid transparent;
 	padding: 20px 30px;
 	border-radius: 0;
 	cursor: pointer;
@@ -22,13 +22,13 @@
 		pointer-events: none;
 	}
 	&.btn-primary{
-		color: #fff;
-		background-color: #192864;
-		border-color: #192864;
+		color: #FFFFFF;
+		background-color: #000000;
+		border-color: #FF7101;
 		&:hover {
-			color: #fff;
-			background-color: #0069d9;
-			border-color: #0062cc;
+			color: #000000;
+			background-color: #FF7101;
+			border-color: #000000;
 		}
 	}
 	&.btn-secondary{

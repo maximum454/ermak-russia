@@ -14,14 +14,21 @@
     &__body{
         background-color: #D6D4D4;
         padding: 20px;
-        margin: 0 -20px;
+        width: 100vw;
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
+    }
+    &__row{
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        max-width: 1400px;
+        margin: 0 auto;
     }
     &__col{
         flex: 1 0 calc(33.333% - 20px);
-        max-width: calc(33.333% - 20px);
+        max-width: 33.333%;
         display: flex;
         gap: 20px;
         flex-direction: column;
@@ -39,7 +46,7 @@
             align-items: center;
             flex-direction: row;
             .main-articles__figure{
-                flex: 1 0 188px;
+                flex: 1 0 50%;
                 max-width: 188px;
                 margin: 0;
                 text-decoration: none;

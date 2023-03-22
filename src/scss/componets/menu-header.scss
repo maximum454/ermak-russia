@@ -23,4 +23,12 @@
             }
         }
     }
+    @include r(1159){
+        li{
+            margin-right: 20px;
+            a{
+                font-size: 14px;
+            }
+        }
+    }
 }
