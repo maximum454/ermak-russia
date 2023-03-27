@@ -8,11 +8,12 @@
 	line-height: 18px;
 	user-select: none;
 	border: 2px solid transparent;
-	padding: 20px 30px;
+	padding: 18px 30px;
 	border-radius: 0;
 	cursor: pointer;
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	text-decoration: none;
+	text-transform: uppercase;
 	&:focus,
 	&:hover {
 		text-decoration: none;
@@ -20,6 +21,9 @@
 	&.disabled{
 		opacity: .65;
 		pointer-events: none;
+	}
+	&.w-100{
+		width: 100%;
 	}
 	&.btn-primary{
 		color: #FFFFFF;
@@ -103,7 +107,7 @@
 	}
 	&.btn-link{
 		font-weight: 400;
-		color: #007bff;
+		color: #FF7101;
 		background-color: transparent;
 		&:hover{
 			color: #0056b3;

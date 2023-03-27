@@ -1,0 +1,126 @@
+.news-list{
+  margin-bottom: 46px;
+  &__body{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__item{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    border-bottom: 1px solid #B7B7B7;
+    padding-bottom: 57px;
+    margin-bottom: 61px;
+    padding-left: 374px;
+    position: relative;
+  }
+  &__figure{
+    flex: 1 0 354px;
+    max-width: 354px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__date{
+    margin-bottom: 23px;
+  }
+  &__name{
+    margin-bottom: 22px;
+  }
+  &__anons{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    text-transform: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+  &__btn{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+    color: #FF7101;
+    text-decoration: none;
+    display: block;
+  }
+  &__footer{
+    text-align: center;
+    .btn{
+      width: 216px;
+    }
+  }
+  &__pagination{
+    margin-top: 43px;
+    a,span{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #B7B7B7;
+      text-decoration: none;
+      margin: 0 12px;
+      &:hover{
+        color: #FF7101;
+      }
+      &.active{
+        color: #000000;
+      }
+    }
+  }
+  @include r(1023){
+    &__item{
+      padding-left: 300px;
+    }
+    &__figure{
+      flex: 1 0 280px;
+      max-width: 280px;
+    }
+  }
+  @include r(767){
+    &__item{
+      padding-left: 0;
+      font-size: 12px;
+      padding-bottom: 17px;
+      margin-bottom: 17px;
+    }
+    &__figure{
+      flex: 1 0 100%;
+      max-width: 100%;
+      position: relative;
+      margin-bottom: 20px;
+      img{
+        width: 100%;
+        display: block;
+        object-fit: cover;
+      }
+    }
+    &__date{
+      margin-bottom: 11px;
+    }
+    &__name{
+      margin-bottom: 16px;
+    }
+    &__anons{
+      -webkit-line-clamp: 13;
+    }
+    &__btn{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: none;
+      color: #FF7101;
+      text-decoration: none;
+      display: block;
+    }
+  }
+}

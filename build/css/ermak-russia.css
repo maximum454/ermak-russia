@@ -1543,7 +1543,7 @@ html.remodal-is-locked {
       -ms-user-select: none;
           user-select: none;
   border: 2px solid transparent;
-  padding: 20px 30px;
+  padding: 18px 30px;
   border-radius: 0;
   cursor: pointer;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -1552,6 +1552,7 @@ html.remodal-is-locked {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .btn:focus,
@@ -1562,6 +1563,10 @@ html.remodal-is-locked {
 .btn.disabled {
   opacity: 0.65;
   pointer-events: none;
+}
+
+.btn.w-100 {
+  width: 100%;
 }
 
 .btn.btn-primary {
@@ -1662,7 +1667,7 @@ html.remodal-is-locked {
 
 .btn.btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: #FF7101;
   background-color: transparent;
 }
 
@@ -2519,6 +2524,17 @@ body {
 
 .wrp__overlay.active {
   display: block;
+}
+
+.main__content {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__content p {
+  font-size: 16px;
+  line-height: 25px;
 }
 
 .d-none {
@@ -3721,6 +3737,106 @@ body {
   max-width: 25%;
 }
 
+.news-list {
+  margin-bottom: 46px;
+}
+
+.news-list__body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.news-list__item {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  border-bottom: 1px solid #B7B7B7;
+  padding-bottom: 57px;
+  margin-bottom: 61px;
+  padding-left: 374px;
+  position: relative;
+}
+
+.news-list__figure {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 354px;
+          flex: 1 0 354px;
+  max-width: 354px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.news-list__date {
+  margin-bottom: 23px;
+}
+
+.news-list__name {
+  margin-bottom: 22px;
+}
+
+.news-list__anons {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
+  text-transform: none;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.news-list__btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+  color: #FF7101;
+  text-decoration: none;
+  display: block;
+}
+
+.news-list__footer {
+  text-align: center;
+}
+
+.news-list__footer .btn {
+  width: 216px;
+}
+
+.news-list__pagination {
+  margin-top: 43px;
+}
+
+.news-list__pagination a,
+.news-list__pagination span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #B7B7B7;
+  text-decoration: none;
+  margin: 0 12px;
+}
+
+.news-list__pagination a:hover,
+.news-list__pagination span:hover {
+  color: #FF7101;
+}
+
+.news-list__pagination a.active,
+.news-list__pagination span.active {
+  color: #000000;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;
@@ -3741,6 +3857,19 @@ body {
   }
 }
 
+@media only screen and (max-width: 1023px) {
+  .news-list__item {
+    padding-left: 300px;
+  }
+
+  .news-list__figure {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 280px;
+            flex: 1 0 280px;
+    max-width: 280px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .form-group {
     margin-bottom: 45px;
@@ -3752,5 +3881,50 @@ body {
 
   .d-mobile-none {
     display: none !important;
+  }
+
+  .news-list__item {
+    padding-left: 0;
+    font-size: 12px;
+    padding-bottom: 17px;
+    margin-bottom: 17px;
+  }
+
+  .news-list__figure {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .news-list__figure img {
+    width: 100%;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .news-list__date {
+    margin-bottom: 11px;
+  }
+
+  .news-list__name {
+    margin-bottom: 16px;
+  }
+
+  .news-list__anons {
+    -webkit-line-clamp: 13;
+  }
+
+  .news-list__btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+    color: #FF7101;
+    text-decoration: none;
+    display: block;
   }
 }
