@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "контакты ermak-russia",
+    "description": "ermak-russia", })
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/ermak-russia.css">
+</head>
+
+<body>
+<div class="wrp">
+    <div class="wrp__overlay"></div>
+    @@include('./template/_header.html')
+    <main class="main main--contacts">
+        <div class="container">
+            <div class="breadcrumb">
+                    <a href="">главная</a>
+                <span>контакты</span>
+            </div>
+            <div class="contacts">
+                <div class="contacts__body">
+                    <form class="form-contacts" action="">
+                        <div class="form-group">
+                            <label class="form-label" for="">представьтесь</label>
+                            <input class="form-group" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="">контактный номер</label>
+                            <input class="form-group" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="">ваш город</label>
+                            <input class="form-group" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="">e-mail</label>
+                            <input class="form-group" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="">ваш вопрос</label>
+                            <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('./template/_footer.html')
+    @@include('./template/_modal.html')
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/ermak-russia.js"></script>
+
+</body>
+
+</html>
