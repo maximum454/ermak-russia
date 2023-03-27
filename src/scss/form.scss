@@ -209,70 +209,66 @@
     cursor: pointer;
     user-select: none;
     position: relative;
-}
-.checkbox-other input[type=checkbox] {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-    display: block;
-    width: 0;
-    height: 0;
-}
-.checkbox-other span {
-    display: inline-block;
-    position: relative;
-    padding: 0 0 0 25px;
-    line-height: 18px;
-}
-.checkbox-other span:before {
-    content: "";
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    left: 0;
-    top: 5px;
-    transition: background-color 0.3s ease;
-    background-color: #EEEEEE;
-    border-radius: 2px;
-}
-
-/* Checked */
-.checkbox-other input[type=checkbox]:checked + span:before {
-    background-color: #FD7400;
-    background-image: url(../img/chekbox-active.svg);
-    background-size: 11px 9px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Focus */
-.focused span:before {
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-}
-
-/* Hover */
-.checkbox-other span:hover:before {
-    background-image: url(../img/chekbox-active.svg);
-    background-size: 11px 9px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #FD7400;
-}
-
-/* Active */
-.checkbox-other span:active:before {
-    filter: brightness(80%);
-}
-
-/* Disabled */
-.checkbox-other input[type=checkbox]:disabled + span {
-    color: #666;
-    cursor: default;
-}
-.checkbox-other input[type=checkbox]:disabled + span:before {
-    filter: grayscale(100%);
-    opacity: 0.6;
+    input[type=checkbox] {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        display: block;
+        width: 0;
+        height: 0;
+        &:checked + span{
+            &:before {
+                background-image: url("../img/icons-sprite.svg#chekbox-active");
+                background-size: 16px 14px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        &:disabled + span {
+            color: #666;
+            cursor: default;
+        }
+        &:disabled + span:before {
+            filter: grayscale(100%);
+            opacity: 0.6;
+        }
+    }
+    span {
+        display: inline-block;
+        position: relative;
+        padding: 0 0 0 25px;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: background-color 0.3s ease;
+            background-color: transparent;
+            border: 1px solid #000000;
+            border-radius: 0;
+            margin-right: 10px;
+        }
+        &:hover{
+            &:before{
+                background-image: url("../img/icons-sprite.svg#chekbox-active");
+                background-size: 16px 14px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        &:active{
+            &:before {
+                filter: brightness(80%);
+            }
+        }
+    }
 }
 
 .form-search-page{
@@ -302,8 +298,67 @@
 }
 
 .form-contacts{
-    .form-label{
-
+    padding-left: 218px;
+    .form-group{
+        display: flex;
+        align-items: center;
+        max-width: 351px;
+        margin-bottom: 48px;
+        position: relative;
+    }
+    .form-label {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        position: absolute;
+        top: 5px;
+        left: -218px;
+    }
+    .form-control{
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid #FF7101;
+        color: #fff;
+    }
+    textarea.form-control{
+        border: 2px solid #FF7101;
+    }
+    .btn{
+        width: 100%;
+        display: block;
+        background-color: #232020;
+    }
+    .checkbox-other{
+        span{
+            line-height: 18px;
+            color: #FFFFFF;
+            padding: 0;
+            &:before{
+                display: inline-block;
+                position: relative;
+                border: 1px solid #FF7101;
+            }
+        }
+    }
+    @include r(767){
+        padding-left: 0;
+        .form-group{
+            max-width: 100%;
+            margin-bottom: 40px;
+            &--text{
+                padding-top: 40px;
+            }
+        }
+        .form-label {
+            text-align: center;
+            position: absolute;
+            top: 5px;
+            left: 0;
+            right: 0;
+        }
     }
 }
 

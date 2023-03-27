@@ -1,3 +1,6 @@
 .contacts{
-
+  padding-bottom: 59px;
+  @include r(767){
+    padding-bottom: 24px;
+  }
 }

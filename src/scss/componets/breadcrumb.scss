@@ -1,9 +1,10 @@
 .breadcrumb{
-    margin-top: 58px;
+    padding-top: 58px;
     margin-bottom: 53px;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
+    color: #000000;
     a, span{
         text-decoration: none;
         font-style: normal;
@@ -12,7 +13,7 @@
         line-height: 18px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #000000;
+        color: inherit;
         position: relative;
         margin-right: 47px;
     }
