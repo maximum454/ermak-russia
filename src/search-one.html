@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "поиск ermak-russia",
+    "description": "ermak-russia", })
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/ermak-russia.css">
+</head>
+
+<body>
+<div class="wrp">
+    <div class="wrp__overlay"></div>
+    @@include('./template/_header.html')
+    <main class="main">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="">главная</a>
+                <a href="">поиск</a>
+            </div>
+
+            <form class="form-search-page" action="">
+                <input class="form-control" type="text" placeholder="ручная дрель">
+                <input class="btn btn-secondary" type="submit" value="искать">
+            </form>
+
+            <section class="product-slider">
+                <div class="container">
+                    <header class="product-slider__header">
+                        <h2 class="product-slider__title ml-0">найден 1 товар</h2>
+                    </header>
+                    <div class="product-slider__body">
+                        <div class="swiper-product-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="embed-responsive embed-responsive-4by3">
+                                            <div class="embed-responsive-item">
+                                                <div class="product-card__stick">
+                                                    <span class="new">Новинка</span>
+                                                </div>
+                                                <figure class="product-card__figure">
+                                                    <img class="img-fluid" src="https://placehold.co/135x135" width="135"
+                                                         height="135"
+                                                         alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__content">
+                                            <div class="product-card__articul">999-999</div>
+                                            <a href="" class="product-card__name">станок аккумуляторный
+                                                шлифовальный</a>
+                                            <div class="product-card__price">99 999 Р</div>
+                                            <a href="#" class="product-card__btn">смотреть</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="product-slider__footer">
+                        <a href="" class="product-slider__all">смотреть больше товаров <i class="icon icon-link-arrow"></i></a>
+                    </footer>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    @@include('./template/_footer.html')
+    @@include('./template/_modal.html')
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/ermak-russia.js"></script>
+
+</body>
+
+</html>

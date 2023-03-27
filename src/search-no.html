@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "поиск ermak-russia",
+    "description": "ermak-russia", })
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/ermak-russia.css">
+</head>
+
+<body>
+<div class="wrp">
+    <div class="wrp__overlay"></div>
+    @@include('./template/_header.html')
+    <main class="main">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="">главная</a>
+                <a href="">поиск</a>
+            </div>
+
+            <form class="form-search-page" action="">
+                <input class="form-control" type="text" placeholder="ручная дрель">
+                <input class="btn btn-secondary" type="submit" value="искать">
+            </form>
+
+            <section class="product-slider">
+                <div class="container">
+                    <header class="product-slider__header">
+                        <h2 class="product-slider__title ml-0">ничего не найдено</h2>
+                    </header>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    @@include('./template/_footer.html')
+    @@include('./template/_modal.html')
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/ermak-russia.js"></script>
+
+</body>
+
+</html>

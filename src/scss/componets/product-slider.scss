@@ -10,6 +10,9 @@
         text-transform: uppercase;
         color: #232020;
         margin: 0 0 0 107px;
+        &.ml-0{
+            margin-left: 0;
+        }
     }
     &__body{
         background-color: #D6D4D4;

@@ -10,8 +10,15 @@ https://maximum454.github.io/ermak-russia/build/news-list.html
 ### Статьи детальня
 https://maximum454.github.io/ermak-russia/build/news-detail.html
 
-### политика конфиденциальности
+### Политика конфиденциальности
 https://maximum454.github.io/ermak-russia/build/privacy-policy.html
 
-### о бренде
+### О бренде
 https://maximum454.github.io/ermak-russia/build/brand.html
+
+### Результаты поиска
+https://maximum454.github.io/ermak-russia/build/search.html
+
+https://maximum454.github.io/ermak-russia/build/search-one.html
+
+https://maximum454.github.io/ermak-russia/build/search-no.html
