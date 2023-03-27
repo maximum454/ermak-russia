@@ -1,0 +1,34 @@
+.privacy-policy{
+  margin-bottom: 44px;
+  &__body{
+    max-width: 1160px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+    color: #000000;
+    height: 1446px;
+    overflow: hidden;
+    &.show{
+      height: auto;
+    }
+  }
+  &__footer{
+    margin-top: 53px;
+    text-align: center;
+  }
+  &__btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    &:hover{
+      color: #FF7101;
+    }
+  }
+}

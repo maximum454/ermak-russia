@@ -1,7 +1,9 @@
 @@include('./partials/jquery.formstyler.min.js')
 @@include('./partials/remodal.js')
 
-if (document.querySelector('.swiper-main-slider')) {
+if
+(document.querySelector('.swiper-main-slider'))
+{
     const swiperMainSlider = new Swiper('.swiper-main-slider', {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -92,3 +94,23 @@ if (document.querySelector('.swiper-product-slider')) {
         });
     });
 }
+
+
+const policyBtn = document.querySelector('.js-policy-btn')
+
+policyBtn.addEventListener('click', function (e) {
+    e.preventDefault()
+    const target = e.currentTarget
+    const body = document.querySelector('.privacy-policy__body')
+    if (target.classList.contains('active')) {
+        target.classList.remove('active')
+        target.innerText = 'ЧИТАТЬ ДАЛЕЕ'
+        body.classList.remove('show')
+    } else {
+        target.classList.add('active')
+        target.innerText = 'СКРЫТЬ'
+        body.classList.add('show')
+    }
+})
+
+
