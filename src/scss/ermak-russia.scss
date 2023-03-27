@@ -42,6 +42,7 @@ body{
 }
 
 .main{
+
 	&__content{
 		max-width: 1160px;
 		margin-left: auto;
@@ -185,6 +186,7 @@ body{
 @import "componets/news-list";
 @import "componets/news-detail";
 @import "componets/privacy-policy";
+@import "componets/about-brand";
 
 
 
