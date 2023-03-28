@@ -28,3 +28,9 @@ https://maximum454.github.io/ermak-russia/build/where-buy.html
 
 ### Сервисные центры
 https://maximum454.github.io/ermak-russia/build/where-buy.html
+
+### Контакты
+https://maximum454.github.io/ermak-russia/build/contacts.html
+
+### Cтать партнёром
+https://maximum454.github.io/ermak-russia/build/partners.html

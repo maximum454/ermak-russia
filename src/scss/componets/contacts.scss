@@ -1,6 +1,73 @@
 .contacts{
   padding-bottom: 59px;
+  .form-contacts{
+    padding-left: 218px;
+    .form-group{
+      display: flex;
+      align-items: center;
+      max-width: 351px;
+      margin-bottom: 48px;
+      position: relative;
+    }
+    .form-label {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      position: absolute;
+      top: 5px;
+      left: -218px;
+    }
+    .form-control{
+      border: none;
+      background-color: transparent;
+      border-bottom: 2px solid #FF7101;
+      color: #fff;
+    }
+    textarea.form-control{
+      border: 2px solid #FF7101;
+    }
+    .btn{
+      width: 100%;
+      display: block;
+      background-color: #232020;
+    }
+    .checkbox-other{
+      span{
+        line-height: 18px;
+        color: #FFFFFF;
+        padding: 0;
+        &:before{
+          display: inline-block;
+          position: relative;
+          border: 1px solid #FF7101;
+        }
+      }
+    }
+  }
   @include r(767){
     padding-bottom: 24px;
+    .form-contacts {
+      padding-left: 0;
+
+      .form-group {
+        max-width: 100%;
+        margin-bottom: 40px;
+
+        &--text {
+          padding-top: 40px;
+        }
+      }
+
+      .form-label {
+        text-align: center;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        right: 0;
+      }
+    }
   }
 }
