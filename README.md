@@ -34,3 +34,9 @@ https://maximum454.github.io/ermak-russia/build/contacts.html
 
 ### Cтать партнёром
 https://maximum454.github.io/ermak-russia/build/partners.html
+
+### Каталог 
+https://maximum454.github.io/ermak-russia/build/catalog.html
+
+### Каталог детальная
+https://maximum454.github.io/ermak-russia/build/catalog-detail.html

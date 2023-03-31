@@ -1,3 +1,4 @@
+
 .tabs {
     margin: 20px 0;
     &__caption {
@@ -53,250 +54,111 @@
         display: none;
         background-color: #fff;
         border-radius: 20px;
-        padding: 40px;
+        padding: 0;
         position: relative;
-        margin-bottom: 40px;
         &.active {
             display: block;
         }
-        &.naryadite-yelku{
-            &:after{
-                content: '';
-                position: absolute;
-                top: -50px;
-                left: -300px;
-                background-image: url("../img/naryadite-yelku-newyear2022/block1_back_element.png");
-                background-size: 100%;
-                background-repeat: no-repeat;
-                width: 518px;
-                height: 733px;
-                pointer-events: none;
-                z-index: -1;
-            }
-        }
-        &.nakroyte-prazdnichnyy-stol{
-            &:after{
-                content: '';
-                position: absolute;
-                top: -50px;
-                left: -300px;
-                background-image: url("../img/nakroyte-prazdnichnyy-stol-newyear2022/block1_back_element.png");
-                background-size: 100%;
-                background-repeat: no-repeat;
-                width: 330px;
-                height: 539px;
-                pointer-events: none;
-                z-index: -1;
-            }
-        }
-        &.ukraste-dom{
-            &:after{
-                content: '';
-                position: absolute;
-                top: -50px;
-                left: -300px;
-                background-image: url("../img/ukraste-dom-newyear2022/block1_back_element.png");
-                background-size: 100%;
-                background-repeat: no-repeat;
-                width: 375px;
-                height: 461px;
-                pointer-events: none;
-                z-index: -1;
-            }
-        }
-        &.vyberite-podarki{
-            &:after{
-                content: '';
-                position: absolute;
-                top: -50px;
-                left: -300px;
-                background-image: url("../img/vyberite-podarki-newyear2022/block1_back_element.png");
-                background-size: 100%;
-                background-repeat: no-repeat;
-                width: 368px;
-                height: 534px;
-                pointer-events: none;
-                z-index: -1;
-            }
-        }
     }
+}
 
-    &__title {
-        font-family: PT Sans;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 47px;
-        text-align: center;
-        color: #2960A5;
-        position: relative;
-        margin-bottom: 20px;
-        a {
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translate(0, -50%);
+
+.tabs-only {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 20px;
+
+    &>input[type="radio"] {
+        display: none;
+        &:checked + .tabs-only__label {
+            font-weight: 700;
+            &:after {
+                transform: rotate(90deg);
+            }
         }
     }
-    &__item{
-        position: relative;
-        text-decoration: none;
+    &__content {
+        display: none;
+        order: 99;
+        flex-grow: 1;
+        width: 100%;
+        margin: 35px 0 0;
     }
-    &__name{
-        font-family: $font1;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 29px;
-        text-align: center;
-        color: #FFFFFF;
-        opacity: 0.7;
+    &__label {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #000000;
         position: relative;
-        span{
+        padding-right: 18px;
+        margin-right: 140px;
+        &:after {
+            content: "";
             position: absolute;
-            top: -20px;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            font-family: PT Sans;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 30px;
-            line-height: 39px;
-            text-align: center;
-            color: #215D96;
-            z-index: -1;
+            top: 3px;
+            right: -4px;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-left: 8px solid #000000;
+            border-bottom: 5px solid transparent;
+        }
+        &:last-of-type{
+            margin-right: 0;
         }
     }
-    &__arrow-prev{
-        display: none;
-        text-decoration: none;
-        background-image: url("../img/bottom_block_arrow_left_inactive.svg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        left: -50px;
-        top: 0;
-    }
-    &__arrow-next{
-        display: none;
-        text-decoration: none;
-        background-image: url("../img/bottom_block_arrow_right_inactive.svg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        right: -50px;
-        top: 0;
-    }
-    &__icon{
+    #tab-btn-1:checked~#content-1,
+    #tab-btn-2:checked~#content-2,
+    #tab-btn-3:checked~#content-3,
+    #tab-btn-4:checked~#content-4 {
         display: block;
-        text-decoration: none;
-        opacity: 0.7;
-        &.active{
-            opacity: 1;
-        }
-    }
-
-    @include r(1360){
-        &__caption {
-            grid-template-columns: repeat(auto-fit,minmax(130px,230px));
-        }
-    }
-    @include r(1023) {
-        &__caption {
-            align-items: flex-start;
-            li {
-                &.active {
-                    .tabs__name{
-                        font-size: 24px;
-                        line-height: 29px;
-                        opacity: 1;
-                        span{
-                            top: -20px;
-                            font-size: 30px;
-                            line-height: 39px;
-                        }
-                    }
-                    .tabs__arrow-prev{
-                        display: none;
-                    }
-                    .tabs__arrow-next{
-                        display: none;
-                    }
-                }
-            }
-        }
     }
     @include r(767){
-        &__caption {
-            grid-template-columns: 1fr 1fr;
-            align-items: flex-end;
-            li {
-                justify-content: flex-end;
-                &.active {
-                    .tabs__name{
-                        font-size: 18px;
-                        line-height: 22px;
-                        opacity: 1;
-                        span{
-                            font-size: 20px;
-                            line-height: 26px;
-                            top: -20px;
-                        }
-                    }
-                    .tabs__arrow-prev{
-                        display: none;
-                    }
-                    .tabs__arrow-next{
-                        display: none;
-                    }
-                }
-                &:hover {
-                    transition: all 0.3s ease;
-                    opacity: 0.7;
-                }
-                a{
-                    text-decoration: none;
-                }
-            }
+        &__label {
+            flex: 1 0 100%;
+            max-width: 50%;
+            font-size: 12px;
+            line-height: 18px;
+            margin-right: 0;
         }
         &__content {
-            display: none;
-            background-color: #fff;
-            border-radius: 20px;
-            padding: 20px;
-            position: relative;
-            margin-bottom: 30px;
-            &.active {
-                display: block;
-            }
-        }
-        &__item{
-            order: 2;
-        }
-        &__icon{
-            order: 1;
-            margin-bottom: 20px;
-        }
-        &__name{
-            font-size: 18px;
-            line-height: 22px;
-            span{
-                font-size: 20px;
-                line-height: 26px;
-            }
-        }
-        &__title {
-            font-size: 24px;
-            line-height: 31px;
-            a {
-                display: none;
-            }
+            order: 0;
+            margin: 10px 0;
         }
     }
-
 }
+/*
+<div class="tabs-only">
+    <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+    <label for="tab-btn-1">Вкладка 1</label>
+    <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+    <label for="tab-btn-2">Вкладка 2</label>
+    <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+    <label for="tab-btn-3">Вкладка 3</label>
+
+    <div id="content-1">
+      Содержимое 1...
+    </div>
+    <div id="content-2">
+      Содержимое 2...
+    </div>
+    <div id="content-3">
+      Содержимое 3...
+    </div>
+  </div>
+*/
+
+/*
+<div class="tabs">
+    <ul class="tabs__caption">
+        <li class="active"><a href="#tab1">таб 1</a></li>
+        <li class=""><a href="#tab2">таб 2</a></li>
+    </ul>
+    <div id="tab1" class="tabs__content active">1</div>
+    <div id="tab2" class="tabs__content">2</div>
+</div>
+*/

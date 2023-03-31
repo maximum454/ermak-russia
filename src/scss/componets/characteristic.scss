@@ -1,0 +1,62 @@
+.characteristic{
+    margin: auto;
+    display: flex;
+    width: auto;
+    max-width: none;
+    min-width: 250px;
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 50%;
+    }
+    &__item{
+        display: block;
+        position: relative;
+        margin: 0 5px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 30px;
+        color: #000000;
+        text-transform: uppercase;
+    }
+    &__label{
+        margin-right: -60%;
+        width: 59%;
+        vertical-align: top;
+        overflow: hidden;
+        display: inline-block;
+        color: #626262;
+        &:after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            margin: 0 -99% 0 3px;
+            vertical-align: baseline;
+            border-bottom: 1px dashed #000;
+        }
+    }
+    &__value{
+        display: inline-block;
+        letter-spacing: normal;
+        padding-left: 3px;
+        vertical-align: bottom;
+        margin-left: 60%;
+        width: 40%;
+    }
+    @include r(1023){
+        &__list{
+            width: 100%;
+        }
+    }
+    @include r(767){
+        &__label{
+            margin-right: -50%;
+            width: 45%;
+        }
+        &__value{
+            margin-left: 50%;
+            width: 50%;
+        }
+    }
+}
