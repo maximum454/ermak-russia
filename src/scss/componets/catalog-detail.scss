@@ -1,0 +1,71 @@
+.catalog-detail{
+    &__body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__slider{
+        max-width: 572px;
+        height: 478px;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        display: none;
+    }
+    &__info{
+        flex: 1;
+        max-width: 464px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #232020;
+        margin: 0 0 30px;
+    }
+    &__anons{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        color: #000000;
+        margin: 0 0 33px;
+    }
+    &__price{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #000000;
+        margin: 0 0 30px;
+    }
+    &__btns{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        .btn.btn-primary{
+            max-width: 215px;
+            width: 100%;
+        }
+        .btn.btn-light{
+            padding: 18px 20px;
+        }
+    }
+    &__tabs{
+        margin: 68px 0;
+    }
+    .swiper-thumbs{
+        flex: 1 0 100%;
+        max-width: 85px;
+        overflow: hidden;
+    }
+    .swiper-main{
+        flex: 1;
+        max-width: 454px;
+        overflow: hidden;
+    }
+}

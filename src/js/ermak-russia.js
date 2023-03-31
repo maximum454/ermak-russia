@@ -94,23 +94,80 @@ if (document.querySelector('.swiper-product-slider')) {
         });
     });
 }
+if (document.querySelector('.swiper-main')) {
+    const swiperThumbs = new Swiper(".swiper-thumbs", {
+        direction: getDirection(),
+        slidesPerView: 4,
+        spaceBetween: 20,
+        observer: true,
+        slideToClickedSlide: true,
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+        watchOverflow:true,
+        virtualTranslate: true,
+        on: {
+            resize: function () {
+                swiperThumbs.changeDirection(getDirection());
+            }
+        }
+    });
+    const swiperMain = new Swiper(".swiper-main", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        watchOverflow: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        preventInteractionOnTransition: true,
+        initialSlide: 0,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        observer: true,
+        thumbs: {
+            swiper: swiperThumbs
+        },
+    });
+}
+
+function getDirection() {
+    let windowWidth = window.innerWidth;
+    let direction = window.innerWidth <= 1023 ? 'horizontal' : 'vertical';
+
+    return direction;
+}
+
+if (document.querySelector('.js-policy-btn')) {
+    const policyBtn = document.querySelector('.js-policy-btn')
+
+    policyBtn.addEventListener('click', function (e) {
+        e.preventDefault()
+        const target = e.currentTarget
+        const body = document.querySelector('.privacy-policy__body')
+        if (target.classList.contains('active')) {
+            target.classList.remove('active')
+            target.innerText = 'ЧИТАТЬ ДАЛЕЕ'
+            body.classList.remove('show')
+        } else {
+            target.classList.add('active')
+            target.innerText = 'СКРЫТЬ'
+            body.classList.add('show')
+        }
+    })
+}
 
 
-const policyBtn = document.querySelector('.js-policy-btn')
+$(function (){
+    /*Табы*/
+    $('.tabs .tabs__caption li').on('click', function(){
+        let name = $(this).children('a').attr('href');
+        if(!$(this).hasClass('active')){
+            $('.tabs li').removeClass('active');
+            $(this).addClass('active');
 
-policyBtn.addEventListener('click', function (e) {
-    e.preventDefault()
-    const target = e.currentTarget
-    const body = document.querySelector('.privacy-policy__body')
-    if (target.classList.contains('active')) {
-        target.classList.remove('active')
-        target.innerText = 'ЧИТАТЬ ДАЛЕЕ'
-        body.classList.remove('show')
-    } else {
-        target.classList.add('active')
-        target.innerText = 'СКРЫТЬ'
-        body.classList.add('show')
-    }
+            $('.tabs__content').removeClass('active');
+            $(name).addClass('active');
+        }
+    });
 })
+
 
 

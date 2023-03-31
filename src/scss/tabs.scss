@@ -1,32 +1,21 @@
 .tabs {
     margin: 20px 0;
     &__caption {
-        margin: 20px 0;
+        margin: 0 0 35px;
         padding: 0;
         list-style: none;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px,310px));
-        grid-gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
+        gap:20px 140px;
         li {
             transition: all 0.3s ease;
             text-align: center;
             display: flex;
             flex-direction: column;
             &.active {
-                .tabs__name{
-                    font-size: 38px;
-                    line-height: 46px;
-                    opacity: 1;
-                    span{
-                        font-size: 60px;
-                        line-height: 78px;
-                        top: -40px;
-                    }
-                }
-                .tabs__icon{
-                    opacity: 1;
+                a{
+                    font-weight: 700;
                 }
             }
             &:hover {
@@ -35,6 +24,12 @@
             }
             a{
                 text-decoration: none;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 18px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #000000;
             }
         }
     }
