@@ -883,14 +883,13 @@ if (document.querySelector('.swiper-product-slider')) {
 if (document.querySelector('.swiper-main')) {
     const swiperThumbs = new Swiper(".swiper-thumbs", {
         direction: getDirection(),
+        centeredSlides: true,
+        centeredSlidesBounds: true,
         slidesPerView: 4,
         spaceBetween: 20,
-        observer: true,
-        slideToClickedSlide: true,
-        watchSlidesProgress: true,
+        watchOverflow: true,
         watchSlidesVisibility: true,
-        watchOverflow:true,
-        virtualTranslate: true,
+        watchSlidesProgress: true,
         on: {
             resize: function () {
                 swiperThumbs.changeDirection(getDirection());
@@ -898,16 +897,10 @@ if (document.querySelector('.swiper-main')) {
         }
     });
     const swiperMain = new Swiper(".swiper-main", {
-        slidesPerView: 1,
-        spaceBetween: 20,
         watchOverflow: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         preventInteractionOnTransition: true,
-        initialSlide: 0,
-        centeredSlides: true,
-        centeredSlidesBounds: true,
-        observer: true,
         thumbs: {
             swiper: swiperThumbs
         },
@@ -916,7 +909,7 @@ if (document.querySelector('.swiper-main')) {
 
 function getDirection() {
     let windowWidth = window.innerWidth;
-    let direction = window.innerWidth <= 1023 ? 'horizontal' : 'vertical';
+    let direction = windowWidth <= 767 ? 'horizontal' : 'vertical';
 
     return direction;
 }
