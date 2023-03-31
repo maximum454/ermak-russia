@@ -2542,6 +2542,26 @@ th {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  padding-right: 18px;
+}
+
+.tabs__caption li:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -4px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 8px solid #000000;
+  border-bottom: 5px solid transparent;
+}
+
+.tabs__caption li.active:after {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .tabs__caption li.active a {
