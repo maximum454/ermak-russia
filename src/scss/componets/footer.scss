@@ -75,7 +75,39 @@
             }
         }
     }
-    @include r(767){
-
+    &__mob{
+     display: none;
+    }
+    &__menu-btn{
+        display: block;
+        background-image: url("../img/footer-menu-btn.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 16px;
+    }
+    @include r(1023){
+        padding: 20px 0;
+        &__top{
+            display: none;
+        }
+        &__bottom{
+            display: none;
+        }
+        &__mob{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__social{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px 50px;
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
     }
 }
