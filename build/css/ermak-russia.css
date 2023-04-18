@@ -2715,6 +2715,10 @@ body {
   font-family: "Proxima Nova", sans-serif;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .wrp {
   overflow: hidden;
   position: relative;
@@ -4913,6 +4917,128 @@ body {
   vertical-align: bottom;
   margin-left: 60%;
   width: 40%;
+}
+
+.search-mob-header {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: calc(100vh - 157px);
+  background-color: #000000;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.search-mob-header.show {
+  display: block;
+}
+
+.search-mob-header__body {
+  padding: 23px 32px;
+  overflow: auto;
+  height: 100%;
+}
+
+.search-mob-header .form-control {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+}
+
+.search-mob-header .form-control::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.search-mob-header .form-control:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.search-mob-header .form-control::-moz-placeholder {
+  color: #FFFFFF;
+}
+
+.search-mob-header .form-control::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.search-mob-header .form-control::placeholder {
+  color: #FFFFFF;
+}
+
+.search-mob-header .swiper-slide img {
+  width: 100%;
+}
+
+.menu-mob-header {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: calc(100vh - 157px);
+  background-color: #000000;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.menu-mob-header.show {
+  display: block;
+}
+
+.menu-mob-header__body {
+  padding: 23px 32px;
+  overflow: auto;
+  height: 100%;
+}
+
+.menu-mob-header__body a {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 35px;
+}
+
+.menu-mob-footer {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  height: calc(100vh - 157px);
+  background-color: #000000;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.menu-mob-footer.show {
+  display: block;
+}
+
+.menu-mob-footer__body {
+  padding: 23px 32px;
+  overflow: auto;
+  height: 100%;
+}
+
+.menu-mob-footer__body a {
+  color: #FF7101;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 35px;
 }
 
 @media only screen and (min-width: 641px) {

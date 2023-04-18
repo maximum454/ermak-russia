@@ -25,6 +25,9 @@ html{
 body{
 	background-color: #fff;
 	font-family: $font1;
+	&.lock{
+		overflow: hidden;
+	}
 }
 .wrp {
 	overflow: hidden;
@@ -258,6 +261,11 @@ body{
 @import "componets/manager";
 @import "componets/catalog-detail";
 @import "componets/characteristic";
+@import "componets/search-mob-header";
+@import "componets/menu-mob-header";
+@import "componets/menu-mob-footer";
+
+
 
 
 

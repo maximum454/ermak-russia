@@ -1,0 +1,45 @@
+.search-mob-header{
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: calc(100vh - 157px);
+  background-color: #000000;
+  z-index: 10;
+  overflow: hidden;
+  &.show{
+    display: block;
+  }
+  &__body {
+    padding:23px 32px;
+    overflow: auto;
+    height: 100%;
+  }
+  .form-control{
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    &::-webkit-input-placeholder {
+      color: #FFFFFF;
+    }
+
+    &:-ms-input-placeholder {
+      color: #FFFFFF;
+    }
+    &::placeholder {
+      color: #FFFFFF;
+    }
+  }
+  .swiper-slide{
+    img{
+      width: 100%;
+    }
+  }
+}

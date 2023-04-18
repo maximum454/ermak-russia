@@ -1,9 +1,7 @@
 @@include('./partials/jquery.formstyler.min.js')
 @@include('./partials/remodal.js')
 
-if
-(document.querySelector('.swiper-main-slider'))
-{
+if(document.querySelector('.swiper-main-slider')){
     const swiperMainSlider = new Swiper('.swiper-main-slider', {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -121,6 +119,19 @@ if (document.querySelector('.swiper-main')) {
     });
 }
 
+if (document.querySelector('.swiper-product-slider')) {
+    const swiperProductSlider = new Swiper('.swiper-search-mob', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        observer: true,
+        observeParents: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+}
+
 function getDirection() {
     let windowWidth = window.innerWidth;
     let direction = windowWidth <= 767 ? 'horizontal' : 'vertical';
@@ -160,6 +171,22 @@ $(function (){
             $(name).addClass('active');
         }
     });
+
+    $('.footer__menu-btn').on('click', function (){
+        $('.menu-mob-footer').toggleClass('show')
+        $('body').toggleClass('lock')
+
+    })
+    $('.header__menu-btn').on('click', function (){
+        $('.menu-mob-header').toggleClass('show')
+        $('body').toggleClass('lock')
+
+    })
+    $('.header__search-btn').on('click', function (){
+        $('.search-mob-header').toggleClass('show')
+        $('body').toggleClass('lock')
+
+    })
 })
 
 
