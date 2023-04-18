@@ -3000,6 +3000,11 @@ body {
   margin-left: 36px;
 }
 
+.header__search-btn,
+.header__menu-btn {
+  display: none;
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3253,7 +3258,6 @@ body {
 
 .main-slider {
   max-width: 1440px;
-  height: 415px;
   margin: 0 auto 65px;
   overflow: hidden;
 }
@@ -3456,6 +3460,7 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 
 .main-category__figure figcaption {
@@ -4922,6 +4927,36 @@ body {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .header__top,
+  .header__menu,
+  .header__search {
+    display: none;
+  }
+
+  .header__logo {
+    max-width: 145px;
+  }
+
+  .header__search-btn {
+    display: block;
+    background-image: url("../img/search-btn-mob.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+  }
+
+  .header__menu-btn {
+    display: block;
+    background-image: url("../img/header-menu-btn.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 16px;
+  }
+}
+
 @media only screen and (max-width: 1023px) {
   .news-list__item {
     padding-left: 300px;
@@ -5059,8 +5094,57 @@ body {
     display: none !important;
   }
 
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main-slider {
+    margin-bottom: 20px;
+  }
+
+  .main-category {
+    margin-bottom: 35px;
+  }
+
+  .main-category__figure figcaption {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .main-category__footer {
+    margin-top: 15px;
+  }
+
+  .main-category__all {
+    font-size: 12px;
+  }
+
+  .main-category__all .icon {
+    margin-right: 0;
+    margin-left: 22px;
+  }
+
+  .main-adventage {
+    margin-bottom: 35px;
+  }
+
+  .main-adventage__figure {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    height: 56px;
+  }
+
+  .main-adventage__figure figcaption {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 0;
+  }
+
   .product-slider {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 
   .product-slider__header {
@@ -5068,6 +5152,24 @@ body {
   }
 
   .product-slider__title {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .product-slider__footer {
+    margin-top: 35px;
+  }
+
+  .product-slider__all {
+    font-size: 12px;
+  }
+
+  .product-slider__all .icon {
+    margin-right: 0;
+    margin-left: 22px;
+  }
+
+  .main-articles__title {
     font-size: 20px;
     margin: 0;
   }

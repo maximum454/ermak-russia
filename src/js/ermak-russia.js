@@ -48,14 +48,14 @@ if (document.querySelector('.swiper-main-category')) {
         breakpoints: {
             320: {
                 slidesPerView: 2,
-
+                spaceBetween: 10,
             },
             480: {
                 slidesPerView: 3,
-
             },
-            640: {
+            768: {
                 slidesPerView: 4,
+                spaceBetween: 20,
             },
         }
     })

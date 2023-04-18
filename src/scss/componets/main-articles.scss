@@ -118,4 +118,10 @@
             margin-left: 44px;
         }
     }
+    @include r(767){
+        &__title{
+            font-size: 20px;
+            margin: 0;
+        }
+    }
 }

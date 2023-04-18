@@ -51,13 +51,23 @@
         margin-right: auto;
     }
     @include r(767){
-        margin-bottom: 37px;
+        margin-bottom: 35px;
         &__header{
             margin-bottom: 18px;
         }
         &__title{
             font-size: 20px;
             margin: 0;
+        }
+        &__footer{
+            margin-top: 35px;
+        }
+        &__all{
+            font-size: 12px;
+            .icon{
+                margin-right: 0;
+                margin-left: 22px;
+            }
         }
     }
 }

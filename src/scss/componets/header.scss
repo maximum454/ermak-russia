@@ -47,7 +47,39 @@
     &__search{
         margin-left: 36px;
     }
+    &__search-btn,
+    &__menu-btn{
+        display: none;
+    }
+
     @include r(1159){
 
+    }
+    @include r(1024){
+        &__top,
+        &__menu,
+        &__search{
+           display: none;
+        }
+        &__logo{
+            max-width: 145px;
+        }
+        &__search-btn{
+            display: block;
+            background-image: url("../img/search-btn-mob.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+
+        }
+        &__menu-btn{
+            display: block;
+            background-image: url("../img/header-menu-btn.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 16px;
+        }
     }
 }

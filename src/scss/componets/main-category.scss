@@ -8,6 +8,7 @@
         img{
             width: 100%;
             object-fit: cover;
+            display: block;
         }
         figcaption{
             position: absolute;
@@ -52,5 +53,25 @@
     }
     .swiper-main-category{
         overflow: hidden;
+    }
+    @include r(767){
+        margin-bottom: 35px;
+        &__figure{
+            figcaption{
+                padding: 10px;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+        &__footer{
+            margin-top: 15px;
+        }
+        &__all{
+            font-size: 12px;
+            .icon{
+                margin-right: 0;
+                margin-left: 22px;
+            }
+        }
     }
 }

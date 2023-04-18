@@ -1,6 +1,5 @@
 .main-slider{
     max-width: 1440px;
-    height: 415px;
     margin: 0 auto 65px;
     overflow: hidden;
     &__item{
@@ -133,5 +132,8 @@
         img{
             width: 100%;
         }
+    }
+    @include r(767){
+        margin-bottom: 20px;
     }
 }
