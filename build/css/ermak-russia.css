@@ -4958,6 +4958,16 @@ body {
 }
 
 @media only screen and (max-width: 1023px) {
+  .main-adventage__figure {
+    height: 100px;
+  }
+
+  .main-adventage__figure figcaption {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   .news-list__item {
     padding-left: 300px;
   }

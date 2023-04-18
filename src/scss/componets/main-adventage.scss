@@ -36,6 +36,16 @@
             color: #000000;
         }
     }
+    @include r(1023){
+        &__figure{
+            height: 100px;
+            figcaption{
+                padding: 10px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
     @include r(767){
         margin-bottom: 35px;
         &__figure{
