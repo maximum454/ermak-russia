@@ -50,7 +50,7 @@
             align-items: center;
             flex-direction: row;
             .main-articles__figure{
-                flex: 1 0 50%;
+                flex: 1 0 calc(50% - 28px);
                 max-width: 188px;
                 margin: 0;
                 text-decoration: none;
@@ -76,6 +76,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
+        text-decoration: none;
         a{
             text-decoration: none;
             color: inherit;
@@ -116,6 +117,12 @@
         .icon{
             margin-right: 0;
             margin-left: 44px;
+        }
+    }
+    @include r(1023){
+        &__name{
+            font-size: 12px;
+            line-height: 16px;
         }
     }
     @include r(767){
