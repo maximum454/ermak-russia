@@ -126,6 +126,7 @@
         }
     }
     @include r(767){
+        margin-bottom: 25px;
         &__title{
             font-size: 20px;
             margin: 0;

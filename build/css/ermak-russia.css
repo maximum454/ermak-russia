@@ -4946,7 +4946,7 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 10;
+    z-index: 20;
   }
 
   .header__top,
@@ -5003,7 +5003,7 @@ body {
     position: fixed;
     width: 100%;
     bottom: 0;
-    z-index: 10;
+    z-index: 20;
     padding: 16px 0;
     height: 57px;
   }
@@ -5272,9 +5272,27 @@ body {
     margin-left: 22px;
   }
 
+  .main-articles {
+    margin-bottom: 25px;
+  }
+
   .main-articles__title {
     font-size: 20px;
     margin: 0;
+  }
+
+  .partners-slider__header {
+    margin-bottom: 35px;
+  }
+
+  .partners-slider__title {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .partners-slider__title a {
+    text-decoration: none;
+    color: inherit;
   }
 
   .news-list__item {
