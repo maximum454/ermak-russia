@@ -29,6 +29,12 @@
   }
   &__name{
     margin-bottom: 22px;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    &:hover{
+      color: #FF7101;
+    }
   }
   &__anons{
     font-weight: 400;

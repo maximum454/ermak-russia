@@ -10,6 +10,10 @@
         text-transform: uppercase;
         color: #232020;
         margin: 0 0 0 107px;
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
     }
     &__body{
         background-color: #D6D4D4;
@@ -72,6 +76,10 @@
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
     }
     &__anons{
         font-weight: 400;
