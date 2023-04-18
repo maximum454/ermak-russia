@@ -87,7 +87,12 @@
         height: 16px;
     }
     @include r(1023){
-        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 10;
+        padding: 16px 0;
+        height: 57px;
         &__top{
             display: none;
         }

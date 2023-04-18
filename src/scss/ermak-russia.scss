@@ -40,6 +40,10 @@ body{
 			display: block;
 		}
 	}
+	@include r(1023){
+		padding-top: 100px;
+		padding-bottom: 57px;
+	}
 }
 
 .main{

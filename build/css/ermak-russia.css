@@ -4942,10 +4942,30 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+
   .header__top,
   .header__menu,
   .header__search {
     display: none;
+  }
+
+  .header__bottom {
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .header__logo {
@@ -4974,8 +4994,18 @@ body {
 }
 
 @media only screen and (max-width: 1023px) {
+  .wrp {
+    padding-top: 100px;
+    padding-bottom: 57px;
+  }
+
   .footer {
-    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    padding: 16px 0;
+    height: 57px;
   }
 
   .footer__top {
