@@ -990,6 +990,10 @@ $(function (){
         $('body').toggleClass('lock')
 
     })
+
+    $('.js-map-open').on('click', function (){
+        $('.ermak-center-map__map').toggleClass('show')
+    })
 })
 
 

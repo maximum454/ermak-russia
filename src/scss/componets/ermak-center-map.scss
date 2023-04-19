@@ -12,6 +12,10 @@
   }
   &__map{
     margin-top: 56px;
+    display: none;
+    &.show{
+      display: block;
+    }
   }
   .btn{
     max-width: 454px;

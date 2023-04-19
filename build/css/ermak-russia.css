@@ -5139,6 +5139,11 @@ body.lock {
 
 .ermak-center-map__map {
   margin-top: 56px;
+  display: none;
+}
+
+.ermak-center-map__map.show {
+  display: block;
 }
 
 .ermak-center-map .btn {
