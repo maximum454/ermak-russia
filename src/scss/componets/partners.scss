@@ -1,6 +1,43 @@
 .partners {
   padding-bottom: 59px;
-
+  &--ermak-center{
+    margin-top: 60px;
+    padding: 60px 0;
+    background: url("../img/partners-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color:rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 100%;
+    }
+    .container{
+      position: relative;
+    }
+    .breadcrumb{
+      color: #ffffff;
+      a{
+        &:after{
+          border-left: 8px solid #ffffff;
+        }
+      }
+    }
+    .form-partners{
+      margin: 0 auto;
+      .form-group{
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
   .form-partners {
     max-width: 690px;
 
