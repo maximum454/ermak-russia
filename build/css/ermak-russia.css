@@ -2722,6 +2722,14 @@ body.lock {
 .wrp {
   overflow: hidden;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
 }
 
 .wrp__overlay {
@@ -3136,6 +3144,8 @@ body.lock {
   background-color: #000000;
   padding: 48px 0 50px;
   color: #fff;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 .footer__top {
