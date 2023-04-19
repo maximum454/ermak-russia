@@ -96,6 +96,10 @@
     &__figure{
         margin: auto 0 0;
         text-decoration: none;
+        img{
+            width: 100%;
+            display: block;
+        }
     }
     &__footer{
         margin-top: 50px;
@@ -119,6 +123,9 @@
             margin-left: 44px;
         }
     }
+    &__slider-mob{
+        display: none;
+    }
     @include r(1023){
         &__name{
             font-size: 12px;
@@ -130,6 +137,12 @@
         &__title{
             font-size: 20px;
             margin: 0;
+        }
+        &__row{
+            display: none;
+        }
+        &__slider-mob{
+            display: block;
         }
     }
 }

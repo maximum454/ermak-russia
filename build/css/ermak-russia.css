@@ -3949,6 +3949,11 @@ body.lock {
   text-decoration: none;
 }
 
+.main-articles__figure img {
+  width: 100%;
+  display: block;
+}
+
 .main-articles__footer {
   margin-top: 50px;
   display: -webkit-box;
@@ -3978,6 +3983,10 @@ body.lock {
 .main-articles__all .icon {
   margin-right: 0;
   margin-left: 44px;
+}
+
+.main-articles__slider-mob {
+  display: none;
 }
 
 .partners-slider {
@@ -5405,6 +5414,14 @@ body.lock {
   .main-articles__title {
     font-size: 20px;
     margin: 0;
+  }
+
+  .main-articles__row {
+    display: none;
+  }
+
+  .main-articles__slider-mob {
+    display: block;
   }
 
   .partners-slider__header {
