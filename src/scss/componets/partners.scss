@@ -89,6 +89,15 @@
     }
   }
   @include r(767){
+    &--ermak-center{
+      margin-top: 40px;
+      padding: 40px 0;
+      .form-partners{
+        .btn{
+          max-width: 100% !important;
+        }
+      }
+    }
     .form-partners {
       .form-group {
         display: flex;

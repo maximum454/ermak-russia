@@ -20,7 +20,8 @@
     justify-content: center;
     gap: 20px;
     .btn{
-      max-width: 216px;
+      flex: 1 0 calc(50% - 20px);
+      max-width: 50%;
       padding: 15px 40px;
       white-space: normal;
       align-items: center;
@@ -70,5 +71,50 @@
     padding: 14px;
     max-width: 216px;
     margin-left: 140px;
+  }
+  @include r(1023){
+    .form-control{
+      max-width: 216px;
+      margin-left: 100px;
+    }
+  }
+  @include r(767){
+    margin-top: 37px;
+    &__title{
+      font-size: 16px;
+      line-height: 18px;
+      color: #000000;
+      margin: 0 0 30px;
+    }
+    &__prezent{
+      margin-top: 20px;
+    }
+    &__metric{
+      display: none;
+    }
+    &__form{
+      .btn{
+        width: 234px;
+        margin: 20px auto 0;
+      }
+    }
+    .form-group{
+      flex-wrap: wrap;
+      font-size: 12px;
+      line-height: 18px;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .form-label{
+      flex: 1 0 100%;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .form-control{
+      flex: 1 0 100%;
+      max-width: 196px;
+      margin-left: 0;
+    }
   }
 }
