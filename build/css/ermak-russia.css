@@ -2954,6 +2954,7 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .header__social {
@@ -3048,6 +3049,10 @@ body.lock {
   margin-right: 0;
 }
 
+.menu-header li:hover ul {
+  display: block;
+}
+
 .menu-header li a {
   font-weight: 900;
   font-size: 16px;
@@ -3065,6 +3070,32 @@ body.lock {
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
   color: #FF7101;
+}
+
+.menu-header li ul {
+  position: absolute;
+  top: calc(100% - 46px);
+  z-index: 11;
+  margin: 0;
+  padding: 50px 16px 40px;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
+  max-height: 482px;
+  display: none;
+}
+
+.menu-header li ul li {
+  margin: 0;
+  max-width: 400px;
+}
+
+.menu-header li ul li a {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 40px;
 }
 
 .search-header {

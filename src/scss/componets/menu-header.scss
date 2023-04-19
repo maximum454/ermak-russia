@@ -9,6 +9,11 @@
         &:last-of-type{
             margin-right: 0;
         }
+        &:hover{
+            ul{
+                display: block;
+            }
+        }
         a{
             font-weight: 900;
             font-size: 16px;
@@ -22,7 +27,30 @@
                 color: #FF7101;
             }
         }
+        ul{
+            position: absolute;
+            top: calc(100% - 46px);
+            z-index: 11;
+            margin: 0;
+            padding: 50px 16px 40px;
+            list-style: none;
+            background-color: rgba(0, 0, 0, 0.9);
+            columns: 2;
+            max-height: 482px;
+            display: none;
+            li{
+                margin: 0;
+                max-width: 400px;
+                a{
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 40px;
+                }
+            }
+
+        }
     }
+
     @include r(1159){
         li{
             margin-right: 20px;
