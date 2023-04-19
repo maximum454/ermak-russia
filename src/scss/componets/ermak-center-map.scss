@@ -1,0 +1,20 @@
+.ermak-center-map{
+  text-align: center;
+  margin-bottom: 74px;
+  &__title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0 0 40px;
+  }
+  &__map{
+    margin-top: 56px;
+  }
+  .btn{
+    max-width: 454px;
+    width: 100%;
+  }
+}
