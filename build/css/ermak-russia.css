@@ -5175,6 +5175,73 @@ body.lock {
   margin-top: 30px;
 }
 
+.ermak-center-invest {
+  margin-top: 60px;
+}
+
+.ermak-center-invest__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1046px;
+  margin: 0 auto;
+}
+
+.ermak-center-invest__left {
+  max-width: 335px;
+}
+
+.ermak-center-invest__left .ermak-center-invest__item {
+  margin-bottom: 30px;
+  padding: 60px;
+  text-align: center;
+}
+
+.ermak-center-invest__right {
+  max-width: 571px;
+}
+
+.ermak-center-invest__item {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FF7101;
+  padding: 14px 10px 11px;
+  border: 1px solid #FF7101;
+  margin-bottom: 38px;
+}
+
+.ermak-center-invest__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.ermak-center-invest__item span {
+  color: #000000;
+}
+
+.ermak-center-invest__okupaemost {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #000000;
+  padding: 13px 13px;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;
