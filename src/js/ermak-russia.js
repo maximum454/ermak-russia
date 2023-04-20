@@ -208,7 +208,32 @@ $(function (){
     $('.js-map-open').on('click', function (){
         $('.ermak-center-map__map').toggleClass('show')
     })
+
+    if ($('.form-contacts .form-control').length > 0){
+        formLabel($('.form-contacts .form-control'))
+    }
 })
 
+function formLabel(formInput){
+    formInput.each( function (){
+        if(!$(this).val() == ''){
+            $(this).parent('.form-group').find('.form-label').addClass('hide')
+        }
+        let input = $(this)
+        let label = input.parent('.form-group').find('.form-label')
+        $(this).on('focus', function (){
+            let textarea = $(this)[0].nodeName
+            if(textarea == 'TEXTAREA'){
+            }else{
+                label.addClass('hide')
+            }
+        })
+        $(this).on('blur', function (){
+            if(!input.val()>0){
+                label.removeClass('hide')
+            }
+        })
+    })
+}
 
 

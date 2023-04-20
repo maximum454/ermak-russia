@@ -16,6 +16,7 @@
         img{
             width: 100%;
             object-fit: cover;
+            height: 100%;
         }
         figcaption{
             position: absolute;
@@ -51,6 +52,8 @@
         &__figure{
             flex: 1 0 100%;
             height: 56px;
+            max-width: 236px;
+            margin: 0 auto;
             figcaption{
                 font-size: 12px;
                 line-height: 12px;

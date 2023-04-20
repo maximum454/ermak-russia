@@ -57,10 +57,10 @@
       .form-group {
         max-width: 100%;
         margin-bottom: 40px;
-
         &--text {
           padding-top: 40px;
         }
+
       }
 
       .form-label {
@@ -69,6 +69,27 @@
         top: 5px;
         left: 0;
         right: 0;
+        pointer-events: none;
+        &.hide{
+          display: none;
+        }
+        &.form-label-phone{
+          display: none;
+        }
+      }
+      .field_PHONE{
+        &::placeholder{
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 18px;
+          letter-spacing: .1em;
+          text-transform: uppercase;
+          text-align: center;
+        }
+      }
+      .form-control{
+        text-align: center;
       }
     }
   }

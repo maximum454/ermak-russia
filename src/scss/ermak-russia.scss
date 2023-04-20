@@ -118,6 +118,13 @@ body{
 			line-height: 25px;
 		}
 	}
+	@include r(767){
+		&--partners{
+			.breadcrumb{
+				padding-top: 20px;
+			}
+		}
+	}
 }
 
 .d-none {

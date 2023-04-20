@@ -3574,7 +3574,8 @@ body.lock {
 
 .main-category__all .icon {
   margin-right: 0;
-  margin-left: 44px;
+  margin-left: 37px;
+  width: 46px;
 }
 
 .main-category .swiper-main-category {
@@ -3610,6 +3611,7 @@ body.lock {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100%;
 }
 
 .main-adventage__figure figcaption {
@@ -3697,7 +3699,8 @@ body.lock {
 
 .product-slider__all .icon {
   margin-right: 0;
-  margin-left: 44px;
+  margin-left: 37px;
+  width: 46px;
 }
 
 .product-slider .swiper-product-slider {
@@ -4078,20 +4081,17 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 20px;
 }
 
 .catalog-section__aside {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 350px;
           flex: 1 0 350px;
-  max-width: 290px;
+  max-width: 350px;
 }
 
 .catalog-section__content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  max-width: 887px;
   background-color: #D6D4D4;
   padding: 20px;
   display: -webkit-box;
@@ -4108,6 +4108,7 @@ body.lock {
 
 .catalog-section__content.cat_elems_section .cat_elems {
   max-width: 100%;
+  padding: 0;
 }
 
 .catalog-section__content.cat_elems_section .product-card {
@@ -4120,6 +4121,14 @@ body.lock {
 
 .catalog-section__content.cat_elems_section .news-list__pagination {
   margin-top: 20px;
+}
+
+.catalog-section .catalog_elems_section {
+  padding: 30px 0 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 887px;
 }
 
 .catalog-section .product-card {
@@ -5586,6 +5595,14 @@ body.lock {
     max-width: 100%;
   }
 
+  .catalog-section .catalog_elems_section {
+    padding: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 100%;
+  }
+
   .news-list__item {
     padding-left: 300px;
   }
@@ -5736,6 +5753,10 @@ body.lock {
     margin: 10px 0;
   }
 
+  .main--partners .breadcrumb {
+    padding-top: 20px;
+  }
+
   .d-desktop-none {
     display: block;
   }
@@ -5785,6 +5806,8 @@ body.lock {
         -ms-flex: 1 0 100%;
             flex: 1 0 100%;
     height: 56px;
+    max-width: 236px;
+    margin: 0 auto;
   }
 
   .main-adventage__figure figcaption {
@@ -5836,6 +5859,17 @@ body.lock {
     display: block;
   }
 
+  .main-articles__figure {
+    height: 183px;
+  }
+
+  .main-articles__figure img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
   .partners-slider__header {
     margin-bottom: 35px;
   }
@@ -5848,6 +5882,14 @@ body.lock {
   .partners-slider__title a {
     text-decoration: none;
     color: inherit;
+  }
+
+  .catalog-section {
+    padding: 0;
+  }
+
+  .catalog-section__content {
+    padding: 26px;
   }
 
   .catalog-section__content.cat_elems_section .product-card {
@@ -5995,6 +6037,69 @@ body.lock {
     top: 5px;
     left: 0;
     right: 0;
+    pointer-events: none;
+  }
+
+  .contacts .form-contacts .form-label.hide {
+    display: none;
+  }
+
+  .contacts .form-contacts .form-label.form-label-phone {
+    display: none;
+  }
+
+  .contacts .form-contacts .field_PHONE::-webkit-input-placeholder {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .contacts .form-contacts .field_PHONE::-moz-placeholder {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .contacts .form-contacts .field_PHONE:-ms-input-placeholder {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .contacts .form-contacts .field_PHONE::-ms-input-placeholder {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .contacts .form-contacts .field_PHONE::placeholder {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .contacts .form-contacts .form-control {
+    text-align: center;
   }
 
   .partners--ermak-center {
