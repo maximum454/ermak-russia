@@ -3805,6 +3805,7 @@ body.lock {
   -webkit-line-clamp: 3;
   text-transform: uppercase;
   -webkit-box-orient: vertical;
+  height: 54px;
   margin: 0 0 8px;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
@@ -4099,6 +4100,26 @@ body.lock {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 20px;
+}
+
+.catalog-section__content.cat_elems_section {
+  max-width: 100%;
+}
+
+.catalog-section__content.cat_elems_section .cat_elems {
+  max-width: 100%;
+}
+
+.catalog-section__content.cat_elems_section .product-card {
+  width: 23.86%;
+  max-width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(25% - 20px);
+          flex: 1 0 calc(25% - 20px);
+}
+
+.catalog-section__content.cat_elems_section .news-list__pagination {
+  margin-top: 20px;
 }
 
 .catalog-section .product-card {
@@ -4510,6 +4531,7 @@ body.lock {
 
 .contacts .form-contacts textarea.form-control {
   border: 2px solid #FF7101;
+  height: 174px;
 }
 
 .contacts .form-contacts .btn {
@@ -4528,6 +4550,7 @@ body.lock {
   display: inline-block;
   position: relative;
   border: 1px solid #FF7101;
+  top: 4px;
 }
 
 .our-phone {
@@ -5825,6 +5848,13 @@ body.lock {
   .partners-slider__title a {
     text-decoration: none;
     color: inherit;
+  }
+
+  .catalog-section__content.cat_elems_section .product-card {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 calc(50% - 20px);
+            flex: 1 0 calc(50% - 20px);
   }
 
   .news-list__item {

@@ -14,6 +14,20 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        &.cat_elems_section{
+            max-width: 100%;
+            .cat_elems{
+                max-width: 100%;
+            }
+            .product-card{
+                width: 23.86%;
+                max-width: 100%;
+                flex: 1 0 calc(25% - 20px);
+            }
+            .news-list__pagination{
+                margin-top: 20px;
+            }
+        }
     }
     .product-card{
         flex: 1 0 calc(25% - 20px);
@@ -32,6 +46,13 @@
         }
     }
     @include r(767){
-
+        &__content{
+            &.cat_elems_section{
+                .product-card{
+                    width: 100%;
+                    flex: 1 0 calc(50% - 20px);
+                }
+            }
+        }
     }
 }
